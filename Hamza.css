@@ -1,0 +1,201 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #222;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcccb;
+}
+
+
+/* Sections */
+
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #800020;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background-color: #800020;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #5c0017;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h3 {
+    color: #800020;
+    margin-bottom: 10px;
+}
+
+
+/* Projects */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    color: #800020;
+    margin-bottom: 12px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+}
